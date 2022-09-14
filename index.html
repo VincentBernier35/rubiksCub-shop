@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>navbar</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar has-shadow is-white">
+  <!-- logo/brand -->
+  <div class="navbar-brand">
+    <a class="navbar-item">
+      <img src="assets/logo-random.png" alt="site logo" style="max-height: 70px;" class="py-3 px-3">
+    </a>
+    <a class="navbar-burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </a>
+
+  </div>
+
+  <div class="navbar-menu" id="nav-links">
+    <div class="navbar-end">
+      <a class="navbar-item">My account</a>
+      <a class="navbar-item">Shopping cart</a>
+    </div>
+  </div>
+</nav>
+
+<!-- breadcrumbs -->
+<div class="section pt-4 pb-0">
+  <nav class="breadcrumb has-arrow-separator">
+    <ul class="container">
+      <li><a class="has-text-grey">home page</a></li>
+      <li><a class="has-text-grey">shop</a></li>
+      <li class="is-active"><a>product</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!-- product info -->
+<section class="section">
+  <div class="container">
+
+    <div class="columns is-vcentered">
+
+      <div class="column is-3">
+        <h1 class="is-size-2-mobile is-size-1-desktop title">Rubik's</h1>
+        <h2 class="is-size-3-mobile is-size-2-desktop subtitle">le classique</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quos assumenda quam recusandae dicta sunt, obcaecati earum asperiores temporibus ea.</p>
+      </div>
+
+      <div class="column is-5 has-text-centered">
+        <img src="assets/rubiks.jpg" alt="rubiks cube image" class="px-6">
+      </div>
+
+      <div class="column is-4">
+        <div class="is-size-4 mb-4">25€</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, iusto.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-8 is-variable">
+
+      <div class="column is-7-tablet">
+        <!-- Tabbed content -->
+        <div class="tabs is-boxed">
+          <ul>
+            <li class="is-active" data-target="product-details">
+              <a >Product Details</a>
+            </li>
+            <li data-target="delivery-information">
+              <a>Delivery Information</a>
+            </li>
+          </ul>
+        </div>
+        <div class="px-2" id="tab-content">
+          <div id="product-details">
+            <h3 class="is-size-5 title">Product Details</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aspernatur asperiores quisquam enim atque voluptates reiciendis quidem repellat, assumenda cum sapiente mollitia numquam autem quasi ea? Veniam fugit aliquam repudiandae.</p>
+          </div>
+
+          <div id="delivery-information" class="is-hidden">
+            <h3 class="is-size-5 title">Delivery Information</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aspernatur asperiores quisquam enim atque voluptates reiciendis quidem repellat, assumenda cum sapiente mollitia numquam autem quasi ea? Veniam fugit aliquam repudiandae.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="column is-5-tablet">
+        <!-- Message box -->
+
+        <div class="message is-primary">
+          <div class="message-header">
+            <p>buy 2 rubiks cube and get a free delivery</p>
+          </div>
+          <div class="message-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, nostrum omnis corrupti fuga rem asperiores deserunt dolore mollitia aliquid autem.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script src="./index.js"></script>
+</body>
+</html>
