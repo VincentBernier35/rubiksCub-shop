@@ -17,6 +17,12 @@
     <a class="navbar-item">
       <img src="assets/logo-random.png" alt="site logo" style="max-height: 70px;" class="py-3 px-3">
     </a>
+    <a class="navbar-item">
+      <h1>Rubik's Club</h1>
+    </a>
+
+    
+
     <a class="navbar-burger" id="burger">
       <span></span>
       <span></span>
@@ -64,12 +70,29 @@
       <div class="column is-4">
         <div class="is-size-4 mb-4">25€</div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, iusto.</p>
+        <form>
+          <div class="field">
+            <div class="control mb-6">
+              <div class="select">
+                <select>
+                  <option>1 rubik's</option>
+                  <option>Lot de 3 - 70€</option>
+                </select>
+              </div>
+
+            </div>
+          </div>
+          <button class="button is-danger">Add to cart</button>
+        </form>
+
+
       </div>
 
     </div>
   </div>
 </section>
 
+<!-- section product details / delivery + message box -->
 <section class="section">
   <div class="container">
     <div class="columns is-8 is-variable">
@@ -109,6 +132,10 @@
           </div>
           <div class="message-body">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, nostrum omnis corrupti fuga rem asperiores deserunt dolore mollitia aliquid autem.</p>
+            <div class="has-text-centered">
+              <button class="button mt-5" id="signup">Sign Up</button>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -116,6 +143,121 @@
     </div>
   </div>
 </section>
+
+<!-- cards -->
+<section class="section is-hidden-mobile">
+  <div class="container">
+    <h3 class="title has-text-centered is-size-4">Related Products</h3>
+    <div class="columns mt-5 is-8-variable is-centered">
+
+      <div class="column is-4-tablet is-3-desktop">
+        <div class="card">
+          <div class="card-image has-text-centered px-6">
+            <img src="./assets/rubiks-holder.jpg" alt="rubik's image">
+          </div>
+          <div class="card-content">
+            <p>22€</p>
+            <p class="title is-size-5">Rubik's Holder</p>
+          </div>
+          <footer class="card-footer">
+            <p class="card-footer-item">
+              <a class="has-text-grey">View</a>
+            </p>
+          </footer>
+        </div>
+      </div>
+
+      <div class="column is-4-tablet is-3-desktop">
+        <div class="card">
+          <div class="card-image has-text-centered px-6">
+            <img src="./assets/RubiksPentacle.webp" alt="rubik's image">
+          </div>
+          <div class="card-content">
+            <p>28€</p>
+            <p class="title is-size-5">Rubik's Pentacle</p>
+          </div>
+          <footer class="card-footer">
+            <p class="card-footer-item">
+              <a class="has-text-grey">View</a>
+            </p>
+          </footer>
+        </div>
+      </div>
+
+      <div class="column is-4-tablet is-3-desktop">
+        <div class="card">
+          <div class="card-image has-text-centered px-6">
+            <img src="./assets/rubiksVanGogh.jpg" alt="rubik's image">
+          </div>
+          <div class="card-content">
+            <p>23€</p>
+            <p class="title is-size-5">Rubik's Van Gogh</p>
+          </div>
+          <footer class="card-footer">
+            <p class="card-footer-item">
+              <a class="has-text-grey">View</a>
+            </p>
+          </footer>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</section>
+
+<!--modals -->
+<div class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content has-background-white py-5 px-5">
+    <h3 class="title mb-6">Join the Rubiks Club</h3>
+
+    <!-- form inside modal -->
+    <form>
+      <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+          <input type="text" class="input" placeholder="Name">
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control">
+          <input type="email" class="input" placeholder="Email">
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            I agree to the <a href="">terms & conditions</a>
+          </label>
+        </div>
+      </div>
+
+
+
+          <!-- button inside modal -->
+      <div class="mt-6 has-text-centered">
+        <button class="button is-warning">Sign up</button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+<!-- footer -->
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>Copyright 2022 - Rubik's club</p>
+  </div>
+</footer>
+
 
 <script src="./index.js"></script>
 </body>
